@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="flex justify-center min-h-screen">
@@ -15,7 +22,7 @@
           <div class="flex flex-col space-y-6">
             <a href="./home.html">Home</a>
             <a href="./explore.html">Explore</a>
-            <a href="#">Notifications</a>
+            <a href="./notification.html">Notifications</a>
             <a href="./follow.html">Follow</a>
             <a href="#">Chat</a>
             <a href="#">Grok</a>
@@ -44,9 +51,45 @@
           </div>
         </aside>
 
-        <main
-          class="flex-1 flex flex-col p-4 border-r space-y-2 border-gray-800"
-        ></main>
+        <main class="flex-1 flex flex-col border-r space-y-2 border-gray-800">
+          <div class="flex justify-between p-4 items-center">
+            <h2 class="text-lg font-extrabold">Notifications</h2>
+
+            <i class="fa-solid fa-gear"></i>
+          </div>
+
+          <div
+            class="flex justify-evenly items-center mt-3 border-b border-gray-800"
+          >
+            <h2 class="text-md font-bold border-b-3 pb-2 border-blue-500">
+              All
+            </h2>
+            <h2 class="pb-2 text-gray-500 font-light">Mentions</h2>
+          </div>
+
+          <div class="flex p-4 items-start space-x-2 border-b border-gray-500">
+            <div
+              class="flex items-center justify-center w-10 h-10 rounded-full"
+            >
+              <i class="fa-solid fa-user text-2xl"></i>
+            </div>
+
+            <div class="flex flex-col space-y-2">
+              <div
+                class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-500 text-white"
+              >
+                C
+              </div>
+
+              <div class="flex items-center space-x-2">
+                <p class="text-gray-500">
+                  <span class="font-bold text-black">hxste</span> followed you
+                </p>
+                <p class="text-gray-500 text-sm">4m</p>
+              </div>
+            </div>
+          </div>
+        </main>
 
         <aside class="flex flex-col w-90 space-y-5 flex-col p-4">
           <div class="outline-1 outline-gray-800 p-4 rounded-xl">
